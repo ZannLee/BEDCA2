@@ -1,0 +1,122 @@
+/* Full-screen background using your image */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('../images/wallpaper.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Flip card container */
+.card-container {
+  perspective: 1000px;
+  width: 400px;
+  max-width: 90vw;
+  height: 600px;
+  position: relative;
+}
+
+/* Card flip container: stack cards instead of flip */
+.card-flip {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: flat; /* disable 3d flip */
+  transition: none; /* no animation */
+}
+
+/* Stack cards and hide all by default */
+.card-flip > .card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.1); /* translucent background */
+  backdrop-filter: blur(10px); /* frosted glass */
+  -webkit-backdrop-filter: blur(10px);
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  color: white;
+  overflow-y: auto;
+  display: none; /* hide all by default */
+  z-index: 1;
+}
+
+/* Show login form initially */
+.card-flip > .card.front {
+  display: block;
+  z-index: 3;
+}
+
+/* Show register or reset form when active */
+.card-flip > .card.back.show,
+.card-flip > .card.reset.show {
+  display: block;
+  z-index: 3;
+}
+
+/* Scrollbar styling (optional) */
+.card::-webkit-scrollbar {
+  width: 6px;
+}
+.card::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+
+.card-flip > .front,
+.card-flip > .back,
+.card-flip > .reset {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-flip > .front.show,
+.card-flip > .back.show,
+.card-flip > .reset.show {
+  display: block;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+
+/* Buttons styling */
+button[type="submit"] {
+  background-color: #F6C1C7;
+  border: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #e9a9b0;
+}
+
+/* Reset Password button style */
+button[type="submit"].btn-warning {
+  background-color: #F6B26B;
+  border: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"].btn-warning:hover {
+  background-color: #E6994F;
+}
+
+/* Alert styling */
+.alert {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.card h2 {
+  color: white;
+}

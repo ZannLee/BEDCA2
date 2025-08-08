@@ -1,0 +1,245 @@
+/* ----------------------------------------------
+   REVIEWS PAGE STYLES (Transparent Cyberpunk Theme)
+----------------------------------------------- */
+
+/* Background image */
+body {
+  background: url('../images/wallpaper.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+/* Transparent container so background shows */
+.reviews-content-container {
+  background-color: transparent !important;
+  max-width: 960px; /* New: Set a specific max-width to match the hero section */
+  margin: 0 auto; /* New: Center the container on the page */
+  padding: 0 15px; /* New: Add some padding for responsiveness */
+}
+
+/* Hero Section */
+.reviews-hero {
+  width: 100%;
+  height: 40vh;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.reviews-hero .container {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.reviews-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #f6c1c7;
+}
+
+.reviews-hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Form Styling */
+#createReviewForm {
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  color: white;
+  transition: box-shadow 0.3s ease;
+  max-width: 960px; /* New: Set max-width to match the hero */
+  margin: 1rem auto; /* New: Center the form horizontally */
+  padding: 1rem; /* New: Make the form more compact */
+}
+
+#createReviewForm:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+#createReviewForm h5 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+/* Form Inputs */
+#createReviewForm .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid #A3C4F3;
+}
+
+/* Button Styling (Kept your existing colors but with !important to override) */
+.btn-primary {
+  background-color: #A3C4F3 !important;
+  border: none;
+  transition: background-color 0.3s ease;
+  color: #333 !important;
+}
+
+.btn-primary:hover {
+  background-color: #89aadf !important;
+}
+
+/* Reviews Table */
+.card {
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  max-width: 960px; /* New: Set max-width to match the hero */
+  margin: 1rem auto; /* New: Center the table horizontally */
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.card-body {
+  padding: 1rem; /* New: Make the table card more compact */
+}
+
+.table {
+  margin: 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.table th {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #f6c1c7;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.5rem; /* New: Make table header cells more compact */
+}
+
+.table td {
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.5rem; /* New: Make table data cells more compact */
+}
+
+/* Action Buttons (Minor contrast fixes) */
+.action-btn {
+  margin: 0 2px;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: none;
+  transition: all 0.2s ease;
+  color: #333;
+}
+
+.action-btn.edit {
+  background-color: #ffd28f;
+}
+
+.action-btn.edit:hover {
+  background-color: #ffc266;
+}
+
+.action-btn.delete {
+  background-color: #f8a1a4;
+}
+
+.action-btn.delete:hover {
+  background-color: #f3787d;
+}
+
+/* Star Rating */
+.star-rating {
+  font-size: 1.2rem; /* New: Smaller stars for a tighter fit */
+  color: #f8c14d;
+  cursor: default;
+  user-select: none;
+}
+
+.clickable-badge {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.clickable-badge:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 4px rgba(255, 202, 40, 0.4);
+}
+
+/* Input override for editing stars */
+.table input[type="number"] {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 2px solid #A3C4F3;
+  border-radius: 8px;
+  padding: 2px 6px;
+  background-color: transparent;
+  color: white;
+}
+
+/* Reviews Table Container */
+.card.shadow-sm {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Card body to make sure content is readable */
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Table styling to match the theme */
+.table {
+  background-color: transparent;
+  color: white;
+}
+
+.table th {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #f6c1c7; /* Neon pink for table headers */
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table td {
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Remove the bottom border from the last row for a cleaner look */
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-bg-type: transparent;
+  background-color: transparent;
+}
+
+.table-striped > tbody > tr:nth-of-type(even) > * {
+  --bs-table-bg-type: transparent;
+  background-color: transparent;
+}

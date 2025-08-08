@@ -1,0 +1,184 @@
+/* ----------------------------------------------
+   BASE STYLES
+----------------------------------------------- */
+
+body {
+  background-color: #FDFDFD;
+  color: #333;
+  background: url('../images/wallpaper.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+h1, h2, h3, h4 {
+  color: #333;
+  font-weight: 700;
+}
+
+.container {
+  background-color: transparent !important;
+}
+
+/* ----------------------------------------------
+   HERO SECTION (Home & Badges compatible)
+----------------------------------------------- */
+
+.home-hero {
+  width: 100%;
+  height: 40vh;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.home-hero .container {
+  background-color: rgba(0, 0, 0, 0.4) !important; /* dark translucent background */
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.home-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #f6c1c7;
+}
+
+.home-hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ----------------------------------------------
+   CARD STYLES (Dark translucent like Badges)
+----------------------------------------------- */
+
+.card {
+  /* Use a transparent black background with a slight blur */
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  /* Set text color to white for readability */
+  color: white; 
+  /* Add a subtle, glowing border */
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  border-radius: 1rem;
+  /* Add a stronger shadow for depth */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+.card-header {
+  background-color: #F6C1C7;
+  color: #333;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  font-weight: 600;
+}
+
+.card-body {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* The table itself */
+.table {
+  margin: 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: transparent; /* Ensure table background is transparent */
+}
+
+/* Table headers */
+.table th {
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly darker, transparent header */
+  color: #f6c1c7; /* A neon pink color for the header text */
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider */
+}
+
+/* Table data cells */
+.table td {
+  vertical-align: middle;
+  text-align: center;
+  color: white; /* Make the cell text white */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle divider */
+}
+
+/* Remove the bottom border from the last row for a cleaner look */
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Styling for the star ratings to ensure they stand out */
+.star-rating {
+  color: #f8c14d; /* gold stars */
+}
+
+/* Delete button styling to match your theme */
+.btn-outline-danger {
+  color: #f8a1a4 !important; /* Pastel red color for the icon */
+  border-color: #f8a1a4 !important;
+}
+
+.btn-outline-danger:hover {
+  background-color: #f8a1a4 !important;
+  color: #333 !important; /* Dark text on hover */
+}
+/* ----------------------------------------------
+   BUTTONS
+----------------------------------------------- */
+
+.btn-dark, .btn-primary {
+  background-color: #F6C1C7;
+  border: none;
+  color: #333;
+}
+
+.btn-dark:hover, .btn-primary:hover {
+  background-color: #e8a8b1;
+}
+
+/* ----------------------------------------------
+   MISC
+----------------------------------------------- */
+
+.logo-icon {
+  height: 50px;
+  width: auto;
+  margin-right: 8px;
+}
+
+/* Custom styles for the transparent leaderboard list items */
+.list-group-item {
+  background-color: rgba(0, 0, 0, 0.6); /* Sets the background to 60% opaque black */
+  color: white; /* Makes the text white */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Adds a subtle white border */
+}
+
+/* To ensure the badge text is also white, not the default Bootstrap color */
+.list-group-item .badge {
+  color: white;
+}
+
+/* Optional: To make the badges themselves stand out, you can give them a different color,
+   or remove their background color to make them a glowing white text. */
+.list-group-item .badge.bg-info {
+  background-color: transparent !important;
+  color: #4c92f5 !important;
+}
+
+.list-group-item .badge.bg-success {
+  background-color: transparent !important;
+  color: #00ff1e !important;
+}

@@ -1,0 +1,97 @@
+/* ----------------------------------------------
+   BASE / SHARED STYLES
+----------------------------------------------- */
+
+body {
+  font-family: 'Audiowide', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ccc;
+  background-color: #0a0a23; /* dark to match theme if needed */
+}
+
+h1, h2, h3, h4, label, button, .btn-primary, p, input {
+  font-family: 'Orbitron', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f6c1c7; /* neon pink */
+  font-weight: 700;
+  text-shadow: 0 0 8px #f6c1c7, 0 0 20px #ff80bf;
+}
+
+
+/* ----------------------------------------------
+   NAVBAR STYLES - translucent with blue/purple theme
+----------------------------------------------- */
+
+.navbar {
+  background-color: rgba(163, 196, 243, 0.8) !important; /* semi-transparent blue */
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 8px rgba(50, 50, 100, 0.2);
+  border-bottom: 1px solid rgba(163, 196, 243, 0.5);
+  transition: background-color 0.3s ease;
+  /* Optional sticky navbar */
+  position: sticky;
+     top: 0;
+     z-index: 1030;
+}
+
+.navbar .nav-link {
+  color: #4a3db8 !important; /* purple-blue text */
+  font-weight: 600;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #f6c1c7 !important; /* pink highlight */
+  text-decoration: underline;
+}
+
+.navbar-brand {
+  color: #5a4dd8;
+  font-weight: 700;
+}
+
+.navbar-brand:hover {
+  color: #f6c1c7;
+}
+
+.btn-dark, .btn-primary {
+  background-color: #F6C1C7;
+  border: none;
+  color: #333;
+}
+
+.btn-dark:hover, .btn-primary:hover {
+  background-color: #e8a8b1;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card-header {
+  background-color: #F6C1C7;
+  color: #333;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  font-weight: 600;
+}
+
+.card-body {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.logo-icon {
+  height: 50px;
+  width: auto;
+  margin-right: 8px;
+}

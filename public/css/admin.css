@@ -1,0 +1,111 @@
+/* ----------------------------------------------
+   ADMIN PAGE STYLES – CYBERPUNK PURPLE THEME
+----------------------------------------------- */
+
+/* Background image */
+body {
+  background: url('../images/wallpaper4.png') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+/* Transparent container so background shows */
+.container {
+  background-color: transparent !important;
+}
+
+/* Hero Section */
+.admin-hero {
+  width: 100%;
+  height: 40vh;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.admin-hero .container {
+  background-color: rgba(40, 0, 60, 0.6) !important; /* deep purple translucent */
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.admin-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #df6bff; /* neon purple-pink */
+}
+
+.admin-hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+/* Form Container Styles */
+.form-container {
+  background-color: rgba(30, 0, 50, 0.6); /* deep purple translucent */
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  margin: 2rem auto;
+  color: white;
+}
+
+/* Form Grouping and Labels */
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #df6bff; /* neon purple-pink */
+}
+
+/* Form Input Fields */
+.form-container input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.form-container input:focus {
+  border-color: #f6c1c7;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(246, 193, 199, 0.25);
+}
+
+/* Button Styling */
+.form-container button[type="submit"] {
+  background-color: #f6c1c7;
+  color: #333;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: #e9a9b0;
+}
+
+/* Headings */
+h4 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}

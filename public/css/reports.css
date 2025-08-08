@@ -1,0 +1,95 @@
+/* ----------------------------------------------
+   Hero Section for Reports Page
+----------------------------------------------- */
+/* Background image */
+body {
+  background: url('../images/wallpaper2.png') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+/* Transparent container so background shows */
+.container {
+  background-color: transparent !important;
+}
+
+/* HERO SECTION (unchanged) */
+.reports-hero {
+  width: 100%;
+  height: 40vh;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.reports-hero .container {
+  background-color: rgba(0, 0, 0, 0.4) !important; /* dark translucent background */
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.reports-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #f6c1c7;
+}
+
+.reports-hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Report card style */
+.report-card {
+  /* Inherit from the main .card class for base styling */
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+}
+
+.report-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+.report-card .card-body {
+  padding: 1.5rem;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.report-card .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.report-card .card-text {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.btn-report {
+  background-color: #A3C4F3;
+  color: #333;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.btn-report:hover {
+  background-color: #85addf;
+  color: #fff;
+}

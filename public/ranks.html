@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ranks</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/ranks.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="home.html">
+        <img src="../images/bugshield.png" class="logo-icon" alt="Logo" height="40" />
+        Cyber Guilds
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="badges.html">Badges</a></li>
+          <li class="nav-item"><a class="nav-link active" href="ranks.html">Ranks</a></li>
+          <li class="nav-item"><a class="nav-link" href="guilds.html">Guilds</a></li>
+          <li class="nav-item"><a class="nav-link" href="vulnerabilities.html">Vulnerabilities</a></li>
+          <li class="nav-item"><a class="nav-link" href="reports.html">Reports</a></li>
+          <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item d-none" id="adminNavItem"><a class="nav-link" href="admin.html">Admin</a></li>
+          <li class="nav-item"><a id="profileButton" href="profile.html" class="nav-link">Profile</a></li>
+          <li class="nav-item"><a id="logoutButton" class="nav-link" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="ranks-hero">
+    <div class="container">
+      <h1>Rank Tiers</h1>
+      <p>Discover your rank and see how far you can go!</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="py-5">
+    <div class="container">
+      <div id="rankList" class="row g-4 justify-content-center">
+        <!-- Ranks will be inserted here -->
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-3">
+    <p class="m-0">
+      Cyber Guilds © All rights reserved. Created by Lee Zann Ee for Educational Purposes in Backend Development.
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/checkAdmin.js"></script>
+  <script src="js/logout.js"></script>
+  <script src="js/getRanks.js"></script>
+</body>
+</html>

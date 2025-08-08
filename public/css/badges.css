@@ -1,0 +1,104 @@
+/* ----------------------------------------------
+   BADGES PAGE STYLES — BLACK TRANSLUCENT CARDS
+----------------------------------------------- */
+
+/* Background image */
+body {
+  background: url('../images/wallpaper.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+/* Transparent container so background shows */
+.container {
+  background-color: transparent !important;
+}
+
+/* HERO SECTION (unchanged) */
+.badges-hero {
+  width: 100%;
+  height: 40vh;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.badges-hero .container {
+  background-color: rgba(0, 0, 0, 0.4) !important; /* dark translucent background */
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.badges-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #f6c1c7;
+}
+
+.badges-hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+/* Black translucent badge cards (like profile) */
+.badge-card {
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.6) !important; /* black with 60% opacity */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.badge-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+/* Card body */
+.badge-card .card-body {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Card title */
+.badge-card .card-title {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: white;
+}
+
+/* Card text */
+.badge-card .card-text {
+  font-size: 1rem;
+  color: white;
+}
+
+.badge-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff; /* optional: adds a white border */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}

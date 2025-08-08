@@ -1,0 +1,115 @@
+/* ----------------------------------------------
+   GUILDS PAGE STYLES
+----------------------------------------------- */
+
+/* Background image */
+body {
+  background: url('../images/wallpaper.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+/* Transparent container so background shows */
+.container {
+  background-color: transparent !important;
+}
+
+/* HERO SECTION (unchanged) */
+.guilds-hero {
+  width: 100%;
+  height: 40vh;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.guilds-hero .container {
+  background-color: rgba(0, 0, 0, 0.4) !important; /* dark translucent background */
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.guilds-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #f6c1c7;
+}
+
+.guilds-hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Guild Card Styling */
+.guild-card {
+  /* Use a transparent black background */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Set text color to white for readability */
+  color: white; 
+  /* Add a subtle, glowing border */
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  border-radius: 1rem;
+  /* Add a stronger shadow for depth */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.guild-card:hover {
+  transform: translateY(-5px);
+  /* Enhance the shadow on hover */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+.guild-card .card-header {
+  /* Match the card's transparent background */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Keep the text color white */
+  color: white;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  /* Add a bottom border to separate from the body */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+  text-align: center;
+  font-weight: 600;
+}
+
+.guild-card .card-body {
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Optional: To make the guild name stand out */
+.guild-card .card-body h5 {
+  color: #f6c1c7; /* A neon pink from your theme */
+  font-weight: 700;
+}
+
+/* Optional: To style the guild description/details */
+.guild-card .card-body p {
+  color: #a3c4f3; /* A neon blue from your theme */
+}
+
+/* Change the color of the Bootstrap warning button to a blue from your theme */
+.btn-warning {
+  background-color: #a3c4f3 !important; /* Your neon blue color */
+  border-color: #a3c4f3 !important;
+  color: #333 !important; /* Keep the text a dark color for readability */
+}
+
+/* Add a hover effect for the blue button */
+.btn-warning:hover {
+  background-color: #8bb1e2 !important; /* A slightly darker blue on hover */
+  border-color: #8bb1e2 !important;
+}
+
+/* Add vertical spacing to the guild cards */
+.col-md-4 {
+  margin-bottom: 2.4rem !important; /* Adjust this value to your desired spacing */
+}

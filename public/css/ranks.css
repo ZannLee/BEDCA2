@@ -1,0 +1,101 @@
+/* ----------------------------------------------
+   RANKS PAGE STYLES
+----------------------------------------------- */
+
+/* Background image */
+body {
+  background: url('../images/wallpaper.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+/* Transparent container so background shows */
+.container {
+  background-color: transparent !important;
+}
+
+/* HERO SECTION (unchanged) */
+.ranks-hero {
+  width: 100%;
+  height: 40vh;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.ranks-hero .container {
+  background-color: rgba(0, 0, 0, 0.4) !important; /* dark translucent background */
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.ranks-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #f6c1c7;
+}
+
+.ranks-hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Rank card style */
+.rank-card {
+  /* Inherit from the main .card class for base styling */
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+}
+
+.rank-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+/* Styling for the elements inside the card */
+.rank-card .card-body {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.rank-card .card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f6c1c7; /* A neon pink from your theme */
+}
+
+.rank-card .card-text {
+  font-size: 1rem;
+  color: #a3c4f3; /* A neon blue from your theme */
+}
+
+/* Styling for the rank images */
+.rank-card img {
+  width: 96px; /* Match the icon size you used */
+  height: 96px;
+  border-radius: 50%; /* Make images circular if desired */
+  border: 2px solid rgba(255, 255, 255, 0.1); /* Subtle border for a glowing effect */
+  background: rgba(0, 0, 0, 0.2); /* A slight background for better image visibility */
+  padding: 5px;
+}
+
+/* Optional responsive tweak */
+@media (max-width: 576px) {
+  .ranks-hero h1 {
+    font-size: 2rem;
+  }
+
+  .ranks-hero p {
+    font-size: 1rem;
+  }
+}
